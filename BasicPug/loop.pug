@@ -1,0 +1,24 @@
+doctype html
+html    
+    head
+        title this is the loop page
+    body
+        h1#pageTitle title goes here
+        p.big-para. 
+                     this is big para
+
+
+        ul
+            each val in [1,2,3,4]
+                li=val
+
+        ul
+            each val,index in [1,4,4,3,3,3,3]
+                li=index+1 + ':' + val
+
+
+
+        -var n=0
+            ul
+                while n<4
+                    li=n++

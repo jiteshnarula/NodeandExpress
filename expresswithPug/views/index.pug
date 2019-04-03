@@ -1,0 +1,16 @@
+block content
+h1 #{title}
+
+table  
+    tr  
+        th ID
+        th Name
+        th Department 
+        th Salary
+    tr 
+        each val in empData
+            tr
+                td=val.empid
+                td=val.empName
+                td=val.empDep
+                td=val.empSalary
